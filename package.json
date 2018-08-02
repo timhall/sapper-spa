@@ -1,0 +1,28 @@
+{
+  "name": "sapper-spa",
+  "version": "0.0.0",
+  "description": "single-page application target for Sapper apps",
+  "author": "Tim Hall <tim.hall.engr@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve example/export",
+    "example": "cd example && sapper dev",
+    "example:build": "cd example && sapper build",
+    "example:export": "cd example && sapper export"
+  },
+  "peerDependencies": {
+    "sapper": "^0.15"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "compression": "^1.7.1",
+    "polka": "^0.4.0",
+    "sapper": "^0.15.0",
+    "serve": "^9.4.0",
+    "sirv": "^0.1.1",
+    "svelte": "^2.0.0",
+    "svelte-loader": "^2.9.0",
+    "webpack": "^4.7.0"
+  }
+}
