@@ -1,6 +1,6 @@
 {
   "name": "sapper-spa",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "single-page application target for Sapper apps",
   "author": "Tim Hall <tim.hall.engr@gmail.com>",
   "license": "MIT",
@@ -26,7 +26,12 @@
     "svelte-loader": "^2.9.0",
     "webpack": "^4.7.0"
   },
-  "keywords": ["svelte", "sapper", "spa", "static"],
+  "keywords": [
+    "svelte",
+    "sapper",
+    "spa",
+    "static"
+  ],
   "files": [
     "index.js",
     "loader.js"
