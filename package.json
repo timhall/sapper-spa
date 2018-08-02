@@ -1,11 +1,14 @@
 {
   "name": "sapper-spa",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "single-page application target for Sapper apps",
   "author": "Tim Hall <tim.hall.engr@gmail.com>",
   "license": "MIT",
   "main": "index.js",
-  "files": ["index.js", "loader.js"],
+  "files": [
+    "index.js",
+    "loader.js"
+  ],
   "scripts": {
     "start": "serve example/export",
     "example": "cd example && sapper dev",
