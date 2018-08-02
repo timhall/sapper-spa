@@ -1,6 +1,6 @@
 import { init } from 'sapper/runtime.js';
 import { manifest } from './manifest/client.js';
-import '../../runtime';
+import '../../';
 
 init({
   target: document.querySelector('#sapper'),

@@ -22,6 +22,14 @@ module.exports = {
             generate: 'ssr'
           }
         }
+      },
+
+      // Get around issue with latest node-fetch
+      // https://github.com/bitinn/node-fetch/issues/493
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto'
       }
     ]
   },

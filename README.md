@@ -37,12 +37,12 @@ module.exports = {
 };
 ```
 
-Add `sapper-spa/runtime` to `app/client.js`:
+Add `sapper-spa` to `app/client.js`:
 
 ```js
 import { init } from 'sapper/runtime.js';
 import { manifest } from './manifest/client.js';
-import '../../runtime';
+import 'sapper-spa';
 
 // ...
 ```
