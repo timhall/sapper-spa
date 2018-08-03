@@ -16,7 +16,7 @@ npm install sapper-spa
 
 Update `webpack/server.config.js` to replace `svelte-loader` with `sapper-spa/loader`:
 
-```js
+```diff
 module.exports = {
   // ...
   module: {
@@ -24,8 +24,8 @@ module.exports = {
       {
         test: /\.html$/,
         use: {
-          // Replace svelte-loader
-          loader: 'sapper-spa/loader'
+-         loader: 'svelte-loader',
++         loader: 'sapper-spa/loader',
           options: {
             css: false,
             generate: 'ssr'
@@ -39,10 +39,10 @@ module.exports = {
 
 Add `sapper-spa` to `app/client.js`:
 
-```js
+```diff
 import { init } from 'sapper/runtime.js';
 import { manifest } from './manifest/client.js';
-import 'sapper-spa';
++import 'sapper-spa';
 
 // ...
 ```
